@@ -1,1 +1,1 @@
-export const DB_NAME="youtube fullstack"
+export const DB_NAME="youtubeDB"

@@ -1,7 +1,6 @@
 import {v2 as cloudinary} from "cloudinary"
 import fs from "fs"
 
-import {v2 as cloudinary} from 'cloudinary';
           
 cloudinary.config({ 
     cloud_name: process.env.CLOUDINARY_CLOUD_NAME, 
@@ -9,9 +8,6 @@ cloudinary.config({
     api_secret: process.env.CLOUDINARY_API_SECRET 
 });
 
-cloudinary.uploader.upload("https://upload.wikimedia.org/wikipedia/commons/a/ae/Olympic_flag.jpg",
-  { public_id: "olympic_flag" }, 
-  function(error, result) {console.log(result); });
 
   const uploadOnCloudinary = async (localFilePath) => {
     try {
